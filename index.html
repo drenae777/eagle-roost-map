@@ -1,0 +1,4180 @@
+Line wrap
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eagle Roost Airpark</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link href="https://www.eagleroost.org/_images/favicon.ico" rel="icon" type="image/x-icon" />
+
+<style>
+
+/* CSS for layout */
+.parking-space {
+background-color: #fff;
+border: 2px solid #000;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+.street-names {
+background-color: #fff;
+border: 0px solid #000;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+/* cursor: pointer; Add cursor pointer to indicate interactivity */
+font-weight: bolder;
+}
+.street-names-vertical {
+background-color: #fff;
+border: 0px solid #000;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+/* cursor: pointer; Add cursor pointer to indicate interactivity */
+font-weight: bolder;
+text-orientation: sideways;
+}
+
+
+
+</style>
+
+</head>
+<body style="font-size:smaller;">
+<div class="container-fluid">
+<div align="center" style=" background-color: #ffff00"><h1>Eagle Roost Air Park</h1></div>
+<div align="center" >Colors Denote Common Owners. Lot Number with a 'V' denotes Vacant Lot. Click on the Lot Number for Details</div>
+<div id="parking-layout" style="position: relative; width: 1080px; height: 1080px; border: 1px solid #000;">
+<!-- Street Names -->
+<div class='street-names' style='left:180px; top:0px;'>Alvin Road</div>
+<div class='street-names' style='left:180px; top:270px;'>Iver Road</div>
+<div class='street-names' style='left:180px; top:525px;'>Donald Road</div>
+<div class='street-names' style='left:180px; top:780px;'>William Road</div>
+<div class='street-names' style='left:180px; top:1050px;'>Pete Road</div>
+<div class='street-names' style='left:555px; top:600px;' >
+R<br>u<br>n<br>w<br>a<br>y<br>
+</div>
+<div class='street-names' style='left:1057.5px; top:540px;' >
+5<br>0<br>7<br><br>A<br>v<br>e </div>
+<div class='street-names' style='left:922.5px; top:540px;' >
+5<br>0<br>8<br><br>A<br>v<br>e </div>
+<div class='street-names' style='left:810px; top:150px;' >
+5<br>0<br>9<br>A<br>v<br>e </div>
+<div class='street-names' style='left:682.5px; top:330px;' >
+5<br>1<br>0<br><br>A<br>v<br>e </div>
+<div class='street-names' style='left:682.5px; top:630px;' >
+5<br>1<br>0<br><br>A<br>v<br>e </div>
+<div class='street-names' style='left:547.5px; top:90px;' >
+5<br>1<br>1<br><br>A<br>v<br>e </div>
+<div class='street-names' style='left:277.5px; top:90px;' >
+5<br>1<br>3<br><br>A<br>v<br>e </div>
+
+<div class='street-names' style='left:277.5px; top:330px;' >
+5<br>1<br>3<br><br>A<br>v<br>e </div>
+<div class='street-names' style='left:142.5px; top:630px;' >
+5<br>1<br>4<br><br>A<br>v<br>e </div>
+<div class='street-names' style='left:7.5px; top:540px;' >
+5<br>1<br>5<br><br>A<br>v<br>e </div>
+<div class='parking-space' style='left:525px; top:360px; width:60px; height:30px;' >
+<div class="rotate-sm-l-90">17</div>
+</div>
+<div class='parking-space' style='left:525px; top:960px; width:60px; height:30px;' >35</div>
+<div id="myModal1" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606104C<br><hr>Jason & Crystal Monteleone<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:jason.monteleone@swgas.com>jason.monteleone@swgas.com</a><br>Secondary email: <a href=mailto:crystal.monteleone@icloud.com>crystal.monteleone@icloud.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:30px; top:30px; width:60px; height:120px;' >
+<a href="#myModal1" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Monteleone</div>
+-->
+1 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal2" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606104D<br><hr>Thomas Haines<br>51415 W. Alvin Rd<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:tomthomas360@gmail.com>tomthomas360@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:90px; top:30px; width:60px; height:120px;' >
+<a href="#myModal2" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Haines</div>
+-->
+2 <!-- <br><div style="font-size:x-small">51415 W. Alvin Rd</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal3" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606045L<br><hr>Igor & Sharon Trutenko<br>Vacant<br> <br><hr>
+Primary email: <a href=mailto:IATRUTE@COX.NET>IATRUTE@COX.NET</a><br>Secondary email: <a href=mailto:ISTRUTE@COX.NET>ISTRUTE@COX.NET</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:30px; width:120px; height:60px;' >
+<a href="#myModal3" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Trutenko</div>
+-->
+3 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal4" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606045M<br><hr>Curtiss & Deborah Aldrich<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:aviation.antiques@yahoo.com>aviation.antiques@yahoo.com</a><br>Secondary email: <a href=mailto:hale.manu@rocketmail.com>hale.manu@rocketmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:90px; width:120px; height:60px;' >
+<a href="#myModal4" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Aldrich</div>
+-->
+4 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal5" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606045P<br><hr>Steven & Lori Allen<br>Vacant<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:lori111@gmail.com>lori111@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:30px; top:150px; width:60px; height:120px;' >
+<a href="#myModal5" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Allen</div>
+-->
+5 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal6" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606064B<br><hr>Adam & Shannon Weaver & Allen<br>51410 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:aeroheadg8@gmail.com>aeroheadg8@gmail.com</a><br>Secondary email: <a href=mailto:theshannonmarie18@gmail.com>theshannonmarie18@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:90px; top:150px; width:60px; height:120px;' >
+<a href="#myModal6" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Weaver & Allen</div>
+-->
+6 <!-- <br><div style="font-size:x-small">51410 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal7" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606064A<br><hr>Karen Davis<br>51340 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:150px; width:60px; height:120px;' >
+<a href="#myModal7" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Davis</div>
+-->
+7 <!-- <br><div style="font-size:x-small">51340 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal8" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606045Q<br><hr>Steve & Amber Murphy & Butterfield<br>48708 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:smurphy-88@hotmail.com>smurphy-88@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:210px; top:150px; width:60px; height:120px;' >
+<a href="#myModal8" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Murphy & Butterfield</div>
+-->
+8 <!-- <br><div style="font-size:x-small">48708 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal9" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606090E<br><hr>Loren & Jennifer French<br>48909 N. 513th Ave<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:mountaincfi@yahoo.com>mountaincfi@yahoo.com</a><br>Secondary email: <a href=mailto:jenfrench71@yahoo.com>jenfrench71@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:300px; top:30px; width:120px; height:60px;' >
+<a href="#myModal9" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> French</div>
+-->
+9 V <!-- <br><div style="font-size:x-small">48909 N. 513th Ave</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal10" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606090F<br><hr>Harold & Jan Syphers<br>48805 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:syphers@tabletoptelephone.com>syphers@tabletoptelephone.com</a><br>Secondary email: <a href=mailto:janspics4u@gmail.com>janspics4u@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:300px; top:90px; width:120px; height:60px;' >
+<a href="#myModal10" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Syphers</div>
+-->
+10 <!-- <br><div style="font-size:x-small">48805 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal11" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606090G<br><hr>Eagle Roost Community Center ERM<br>48906 N. 511th Ave<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ffff00;left:420px; top:30px; width:120px; height:60px;' >
+<a href="#myModal11" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> ERM</div>
+-->
+11 <!-- <br><div style="font-size:x-small">48906 N. 511th Ave</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal12" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606090H<br><hr>Keith & Neva Weiland & Short<br>48814 N. 511th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:rotorgoat8@hotmail.com>rotorgoat8@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:420px; top:90px; width:120px; height:60px;' >
+<a href="#myModal12" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Weiland & Short</div>
+-->
+12 <!-- <br><div style="font-size:x-small">48814 N. 511th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal13" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606089<br><hr>Donna Davidson<br>51232 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:donna.davidson.co@gmail.com>donna.davidson.co@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:300px; top:150px; width:60px; height:120px;' >
+<a href="#myModal13" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Davidson</div>
+-->
+13 <!-- <br><div style="font-size:x-small">51232 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal14" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606090M<br><hr>Wayne Rudd<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:waynerudd@hotmail.com>waynerudd@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#FFCCFF;left:360px; top:150px; width:60px; height:120px;' >
+<a href="#myModal14" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Rudd</div>
+-->
+14 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal15" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606090K<br><hr>Randall & Jane Boykin<br>51122 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:rkb.ch750@yahoo.com>rkb.ch750@yahoo.com</a><br>Secondary email: <a href=mailto:janeboykin77@gmail.com>janeboykin77@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:420px; top:150px; width:60px; height:120px;' >
+<a href="#myModal15" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Boykin</div>
+-->
+15 <!-- <br><div style="font-size:x-small">51122 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal16" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606090L<br><hr>Tom and Sheryl Cammarato & Christie<br>51112 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:tacammarato@yahoo.com >tacammarato@yahoo.com </a><br>Secondary email: <a href=mailto:slchristie@yahoo.com>slchristie@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#E69900;left:480px; top:150px; width:60px; height:120px;' >
+<a href="#myModal16" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Cammarato & Christie</div>
+-->
+16 <!-- <br><div style="font-size:x-small">51112 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal17" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606108<br><hr>Gene & Lynda Wilson<br>51421 W Iver Road<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:fastbuggy123@gmail.com>fastbuggy123@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ccccff;left:30px; top:300px; width:60px; height:120px;' >
+<a href="#myModal17" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Wilson</div>
+-->
+17 <!-- <br><div style="font-size:x-small">51421 W Iver Road</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal18" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606109<br><hr>John & Barbara Marie Greissing<br>51413 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:johnbarb@tabletoptelephone.com>johnbarb@tabletoptelephone.com</a><br>Secondary email: <a href=mailto:johnbarb@tabletoptelephone.com>johnbarb@tabletoptelephone.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:90px; top:300px; width:60px; height:120px;' >
+<a href="#myModal18" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Greissing</div>
+-->
+18 <!-- <br><div style="font-size:x-small">51413 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal19" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606075C<br><hr>Kara & Zach Lukas<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:karmnelson@gmail.com>karmnelson@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:300px; width:60px; height:120px;' >
+<a href="#myModal19" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Lukas</div>
+-->
+19 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal20" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606075E<br><hr>Robert & Sharon Wheeler & Martin<br>48408 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:rbrtwheeler@hotmail.com>rbrtwheeler@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:210px; top:300px; width:60px; height:120px;' >
+<a href="#myModal20" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Wheeler & Martin</div>
+-->
+20 <!-- <br><div style="font-size:x-small">48408 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal21" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606066A<br><hr>Thomas & Brooke Ayiyi<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:ayiyi_thomas@yahoo.com>ayiyi_thomas@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#5D8AA8;left:30px; top:420px; width:120px; height:60px;' >
+<a href="#myModal21" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Ayiyi</div>
+-->
+21 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal22" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606066B<br><hr>Clark & Carol Beard<br>48234 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:Clark@beardappraisals.com>Clark@beardappraisals.com</a><br>Secondary email: <a href=mailto:Casabarba58@gmail.com>Casabarba58@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:420px; width:120px; height:60px;' >
+<a href="#myModal22" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Beard</div>
+-->
+22 <!-- <br><div style="font-size:x-small">48234 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal23" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606067E<br><hr>William Davin<br>51408 Donald Dr.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:wdavin77@gmail.com>wdavin77@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:30px; top:480px; width:120px; height:60px;' >
+<a href="#myModal23" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Davin</div>
+-->
+23 <!-- <br><div style="font-size:x-small">51408 Donald Dr.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal24" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606067F<br><hr>Butch & Linda Dyrland<br>51336 W. Donald Dr.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bdyrland@live.com>bdyrland@live.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:480px; width:120px; height:45px;' >
+<a href="#myModal24" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Dyrland</div>
+-->
+24 <!-- <br><div style="font-size:x-small">51336 W. Donald Dr.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal25" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606076<br><hr>William & Pamela Jorgenson<br>48421 N. 513th Ave<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:300px; top:300px; width:60px; height:120px;' >
+<a href="#myModal25" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Jorgenson</div>
+-->
+25 V <!-- <br><div style="font-size:x-small">48421 N. 513th Ave</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal26" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606045Z<br><hr>Kevin Knighton<br>51207 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:kevinknighton57@gmail.com>kevinknighton57@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:360px; top:300px; width:60px; height:120px;' >
+<a href="#myModal26" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Knighton</div>
+-->
+26 <!-- <br><div style="font-size:x-small">51207 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal27" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606080<br><hr>Timothy & Margaret Johnson<br>51137 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:timjohnson3799@gmail.com>timjohnson3799@gmail.com</a><br>Secondary email: <a href=mailto:margaretjohnson3799@gmail.com>margaretjohnson3799@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:420px; top:300px; width:60px; height:120px;' >
+<a href="#myModal27" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Johnson</div>
+-->
+27 <!-- <br><div style="font-size:x-small">51137 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal28" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606081<br><hr>Wayne Rudd<br>51121 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:waynerudd@hotmail.com>waynerudd@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#FFCCFF;left:480px; top:300px; width:45px; height:120px;' >
+<a href="#myModal28" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Rudd</div>
+-->
+28 <!-- <br><div style="font-size:x-small">51121 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal29" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606065E<br><hr>(c/o Marti Nielsen) Reinath/Gifford Family<br>48227 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:martinnielson@gmail.com>martinnielson@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:300px; top:420px; width:120px; height:60px;' >
+<a href="#myModal29" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Reinath/Gifford Family</div>
+-->
+29 <!-- <br><div style="font-size:x-small">48227 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal30" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606065F<br><hr>Danielle Porter<br>48235 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:daniellep@sitefolio.com>daniellep@sitefolio.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:420px; top:420px; width:105px; height:60px;' >
+<a href="#myModal30" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Porter</div>
+-->
+30 <!-- <br><div style="font-size:x-small">48235 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal31" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606067D<br><hr>Patty Petrik<br>51226 W. Donald Dr.<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:pattypetrik53@hotmail.com>pattypetrik53@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:300px; top:480px; width:120px; height:45px;' >
+<a href="#myModal31" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Petrik</div>
+-->
+31 <!-- <br><div style="font-size:x-small">51226 W. Donald Dr.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal32" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606067C<br><hr>Larry & Tina Brewer & Perazzo<br>51140 W. Donald Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:lbrewer660@gmail.com>lbrewer660@gmail.com</a><br>Secondary email: <a href=mailto:perazzo.tina@gmail.com>perazzo.tina@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:420px; top:480px; width:105px; height:60px;' >
+<a href="#myModal32" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Brewer & Perazzo</div>
+-->
+32 <!-- <br><div style="font-size:x-small">51140 W. Donald Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal33" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606098<br><hr>Osaginwen Ayiyi<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:oayiyi@calledtocareaz.com>oayiyi@calledtocareaz.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#5D8AA8;left:570px; top:30px; width:60px; height:120px;' >
+<a href="#myModal33" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Ayiyi</div>
+-->
+33 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal34" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606098<br><hr>Osaginwen Ayiyi<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:oayiyi@calledtocareaz.com>oayiyi@calledtocareaz.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#5D8AA8;left:630px; top:30px; width:60px; height:120px;' >
+<a href="#myModal34" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Ayiyi</div>
+-->
+34 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal35" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606099A<br><hr>Gary & Mary Dyer<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:gtdtahoe@gmail.com>gtdtahoe@gmail.com</a><br>Secondary email: <a href=mailto:mvk.dyer@gmail.com>mvk.dyer@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#B3FF19;left:690px; top:30px; width:60px; height:120px;' >
+<a href="#myModal35" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Dyer</div>
+-->
+35 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal36" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606099B<br><hr>ERM ERM<br>Vacant<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ffff00;left:750px; top:30px; width:60px; height:120px;' >
+<a href="#myModal36" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> ERM</div>
+-->
+36 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal37" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606099B<br><hr>ERM ERM<br>Vacant<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ffff00;left:810px; top:30px; width:60px; height:120px;' >
+<a href="#myModal37" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> ERM</div>
+-->
+37 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal38" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606099B<br><hr>ERM ERM<br>Vacant<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ffff00;left:870px; top:30px; width:60px; height:120px;' >
+<a href="#myModal38" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> ERM</div>
+-->
+38 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal39" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606099B<br><hr>ERM ERM<br>Vacant<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ffff00;left:930px; top:30px; width:60px; height:120px;' >
+<a href="#myModal39" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> ERM</div>
+-->
+39 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal40" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606099B<br><hr>ERM ERM<br>Vacant<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ffff00;left:990px; top:30px; width:60px; height:120px;' >
+<a href="#myModal40" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> ERM</div>
+-->
+40 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal41" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044J<br><hr>Ed & Lori Szostak<br>50814 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:edszair@icloud.com>edszair@icloud.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#EFDECD;left:570px; top:150px; width:60px; height:120px;' >
+<a href="#myModal41" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Szostak</div>
+-->
+41 <!-- <br><div style="font-size:x-small">50814 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal42" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044J<br><hr>Ed & Lori Szostak<br>50814 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:easzostak@icloud.com>easzostak@icloud.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#EFDECD;left:630px; top:150px; width:60px; height:120px;' >
+<a href="#myModal42" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Szostak</div>
+-->
+42 <!-- <br><div style="font-size:x-small">50814 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal43" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044H<br><hr>Gary & Mary Dyer<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:gtdtahoe@gmail.com>gtdtahoe@gmail.com</a><br>Secondary email: <a href=mailto:mvk.dyer@gmail.com>mvk.dyer@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#B3FF19;left:690px; top:150px; width:60px; height:120px;' >
+<a href="#myModal43" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Dyer</div>
+-->
+43 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal44" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044K<br><hr>Gary & Mary Dyer<br>50910 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:gtdtahoe@gmail.com>gtdtahoe@gmail.com</a><br>Secondary email: <a href=mailto:mvk.dyer@gmail.com>mvk.dyer@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#B3FF19;left:750px; top:150px; width:45px; height:120px;' >
+<a href="#myModal44" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Dyer</div>
+-->
+44 <!-- <br><div style="font-size:x-small">50910 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal45" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044Q<br><hr>Lincoln & Tamara Anderson<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:lincoln@americoolusa.com>lincoln@americoolusa.com</a><br>Secondary email: <a href=mailto:tamara_anderson@aol.com>tamara_anderson@aol.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:825px; top:150px; width:45px; height:120px;' >
+<a href="#myModal45" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Anderson</div>
+-->
+45 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal46" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044R<br><hr>Gary L. Diehl<br>Vacant<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:870px; top:150px; width:60px; height:120px;' >
+<a href="#myModal46" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Diehl</div>
+-->
+46 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal47" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606093<br><hr>Michael and Jason Culpeppet and Adamson<br>50636 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:Culpeppermichael@outlook.com>Culpeppermichael@outlook.com</a><br>Secondary email: <a href=mailto:Jasonadamson1284@gmail.com>Jasonadamson1284@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:930px; top:150px; width:60px; height:120px;' >
+<a href="#myModal47" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Culpeppet and Adamson</div>
+-->
+47 <!-- <br><div style="font-size:x-small">50636 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal48" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606094<br><hr>ERM ERM<br>Vacant<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ffff00;left:990px; top:150px; width:60px; height:120px;' >
+<a href="#myModal48" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> ERM</div>
+-->
+48 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal49" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606079C,50606079F<br><hr>Gordon Bowen<br>50907 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:gordon.bowen.training@gmail.com>gordon.bowen.training@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:300px; width:90px; height:60px;' >
+<a href="#myModal49" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Bowen</div>
+-->
+49 <!-- <br><div style="font-size:x-small">50907 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal50" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606079D<br><hr>JoAnn Heatherly<br>48408 N. 510th Ave.<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:360px; width:90px; height:60px;' >
+<a href="#myModal50" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Heatherly</div>
+-->
+50 <!-- <br><div style="font-size:x-small">48408 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal51" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044Z<br><hr>Samuel Morgan<br>50979 W Iver Rd<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:budm201@gmail.com>budm201@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:705px; top:300px; width:45px; height:120px;' >
+<a href="#myModal51" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Morgan</div>
+-->
+51 V <!-- <br><div style="font-size:x-small">50979 W Iver Rd</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal52" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044Y<br><hr>Douglas O. Moffit<br>50909 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:conniejane@gmail.com>conniejane@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:750px; top:300px; width:60px; height:120px;' >
+<a href="#myModal52" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Moffit</div>
+-->
+52 <!-- <br><div style="font-size:x-small">50909 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal53" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044S<br><hr>Daniel & Kay Morris<br>50839 W. Iver Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:xcflyn@gmail.com>xcflyn@gmail.com</a><br>Secondary email: <a href=mailto:kaymorris11224@gmail.com>kaymorris11224@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:810px; top:300px; width:60px; height:120px;' >
+<a href="#myModal53" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Morris</div>
+-->
+53 <!-- <br><div style="font-size:x-small">50839 W. Iver Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal54" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044T<br><hr>Brian & Janet Herreman<br>48426 N. 508th Ave<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bherreman@comcast.net>bherreman@comcast.net</a><br>Secondary email: <a href=mailto:jherreman@comcast.net>jherreman@comcast.net</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:870px; top:300px; width:45px; height:120px;' >
+<a href="#myModal54" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Herreman</div>
+-->
+54 <!-- <br><div style="font-size:x-small">48426 N. 508th Ave</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal55" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606120<br><hr>Donald/Sharon/Dalton Benson<br>48409 N. 508th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:asudad@mtaonline.net>asudad@mtaonline.net</a><br>Secondary email: <a href=mailto:asumom@mtaonline.net>asumom@mtaonline.net</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:945px; top:360px; width:105px; height:60px;' >
+<a href="#myModal55" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Benson</div>
+-->
+55 <!-- <br><div style="font-size:x-small">48409 N. 508th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal56" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606121<br><hr>Tom and Sheryl Cammarato & Christie<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:tacammarato@yahoo.com>tacammarato@yahoo.com</a><br>Secondary email: <a href=mailto:slchristie@yahoo.com>slchristie@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#E69900;left:945px; top:300px; width:105px; height:60px;' >
+<a href="#myModal56" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Cammarato & Christie</div>
+-->
+56 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal57" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606079E<br><hr>Dave & Denise Mundy<br>48304 N. 510th Ave.<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:dmundy@tabletoptelephone.com>dmundy@tabletoptelephone.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:420px; width:90px; height:60px;' >
+<a href="#myModal57" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Mundy</div>
+-->
+57 <!-- <br><div style="font-size:x-small">48304 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal58" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606077<br><hr>Jeffrey Wilson<br>48317 N. 510th Ave<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:j.wilson.27az@gmail.com>j.wilson.27az@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#C9FFE5;left:705px; top:420px; width:105px; height:60px;' >
+<a href="#myModal58" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Wilson</div>
+-->
+58 <!-- <br><div style="font-size:x-small">48317 N. 510th Ave</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal59" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606101<br><hr>Anthony Burton<br>48311 N. 508th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:anthonyalburton@yahoo.com>anthonyalburton@yahoo.com</a><br>Secondary email: <a href=mailto:maintainfitness1@gmail.com>maintainfitness1@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#FFCC66;left:810px; top:420px; width:105px; height:60px;' >
+<a href="#myModal59" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Burton</div>
+-->
+59 <!-- <br><div style="font-size:x-small">48311 N. 508th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal60" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044W<br><hr>Joseph & Susan Perez & Fiala<br>48315 N. 508th Ave<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:jafpilot62@gmail.com>jafpilot62@gmail.com</a><br>Secondary email: <a href=mailto:azcornhusker@gmail.com>azcornhusker@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:945px; top:420px; width:105px; height:60px;' >
+<a href="#myModal60" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Perez & Fiala</div>
+-->
+60 <!-- <br><div style="font-size:x-small">48315 N. 508th Ave</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal61" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606079B<br><hr>Gordon & Martha Jelm & Home<br>48224 N. 510th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:gejelm@gmail.com>gejelm@gmail.com</a><br>Secondary email: <a href=mailto:emptyhome@aol.com>emptyhome@aol.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:480px; width:105px; height:60px;' >
+<a href="#myModal61" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Jelm & Home</div>
+-->
+61 <!-- <br><div style="font-size:x-small">48224 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal62" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606078<br><hr>Jeff Wilson<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:j.wilson.27az@gmail.com>j.wilson.27az@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#C9FFE5;left:690px; top:480px; width:120px; height:60px;' >
+<a href="#myModal62" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Wilson</div>
+-->
+62 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal63" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606100<br><hr>Anthony & Asanta Burton<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:anthonyalburton@yahoo.com>anthonyalburton@yahoo.com</a><br>Secondary email: <a href=mailto:asantas@gmail.com>asantas@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#FFCC66;left:810px; top:480px; width:105px; height:60px;' >
+<a href="#myModal63" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Burton</div>
+-->
+63 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal64" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606044X<br><hr>Richard & Pamela Rozum<br>48223 N. 508th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:rarozum@gmail.com>rarozum@gmail.com</a><br>Secondary email: <a href=mailto:pmrozum@gmail.com>pmrozum@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:945px; top:480px; width:105px; height:60px;' >
+<a href="#myModal64" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Rozum</div>
+-->
+64 <!-- <br><div style="font-size:x-small">48223 N. 508th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal65" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606096A<br><hr>Ned & Nancy Hyduke<br>48102 N. 514th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:nhyduke@msn.com>nhyduke@msn.com</a><br>Secondary email: <a href=mailto:nhyduke@msn.com>nhyduke@msn.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:30px; top:540px; width:120px; height:60px;' >
+<a href="#myModal65" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Hyduke</div>
+-->
+65 <!-- <br><div style="font-size:x-small">48102 N. 514th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal66" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606096B<br><hr>Gary & Sharman Peters<br>48048 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:freefallinguy@hotmail.com>freefallinguy@hotmail.com</a><br>Secondary email: <a href=mailto:freefallingal@hotmail.com>freefallingal@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:555px; width:120px; height:45px;' >
+<a href="#myModal66" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Peters</div>
+-->
+66 <!-- <br><div style="font-size:x-small">48048 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal67" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606097C<br><hr>Benjamin L. Carbajal<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bcarbajal119@outlook.com>bcarbajal119@outlook.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:30px; top:600px; width:105px; height:60px;' >
+<a href="#myModal67" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Carbajal</div>
+-->
+67 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal68" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606097D<br><hr>Chisholm Wildermuth<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:chisholm@grandavebb.com>chisholm@grandavebb.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:30px; top:660px; width:60px; height:120px;' >
+<a href="#myModal68" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Wildermuth</div>
+-->
+68 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal69" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606097B<br><hr>Leigh & Deanna Allen & Harding<br>51412 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:leighman@inbox.com>leighman@inbox.com</a><br>Secondary email: <a href=mailto:mssolstice77@gmail.com>mssolstice77@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:90px; top:660px; width:45px; height:120px;' >
+<a href="#myModal69" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Allen & Harding</div>
+-->
+69 <!-- <br><div style="font-size:x-small">51412 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal70" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606095A<br><hr>Pam & Dave Kyzer<br>48015 N. 514th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:Bsx488@yahoo.com>Bsx488@yahoo.com</a><br>Secondary email: <a href=mailto:Pam.kyzer@gmail.com>Pam.kyzer@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:165px; top:600px; width:120px; height:60px;' >
+<a href="#myModal70" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Kyzer</div>
+-->
+70 <!-- <br><div style="font-size:x-small">48015 N. 514th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal71" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606095B<br><hr>John & Summer Roland<br>51390 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:jroland99@hotmail.com>jroland99@hotmail.com</a><br>Secondary email: <a href=mailto:the.rolands99@gmail.com>the.rolands99@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:165px; top:660px; width:60px; height:120px;' >
+<a href="#myModal71" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Roland</div>
+-->
+71 <!-- <br><div style="font-size:x-small">51390 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal72" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606095C<br><hr>Debra Nelson<br>51230 W. William Rd<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:$fff;left:225px; top:660px; width:60px; height:120px;' >
+<a href="#myModal72" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Nelson</div>
+-->
+72 V <!-- <br><div style="font-size:x-small">51230 W. William Rd</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal73" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606069A<br><hr>Richard Milhous<br>51227 W. Donald Dr.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:t6424dm@yahoo.com>t6424dm@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:300px; top:555px; width:120px; height:45px;' >
+<a href="#myModal73" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Milhous</div>
+-->
+73 <!-- <br><div style="font-size:x-small">51227 W. Donald Dr.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal74" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606069B<br><hr>Doug & Glenda Schmit & Sorotski<br>48015 N. 513th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:sorotski1@gmail.com>sorotski1@gmail.com</a><br>Secondary email: <a href=mailto:vh_jec@yahoo.ca>vh_jec@yahoo.ca</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:285px; top:600px; width:135px; height:60px;' >
+<a href="#myModal74" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Schmit & Sorotski</div>
+-->
+74 <!-- <br><div style="font-size:x-small">48015 N. 513th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal75" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606070A<br><hr>Greg & Jenna Gregory<br>51220 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:greg4892@icloud.com>greg4892@icloud.com</a><br>Secondary email: <a href=mailto:jlg79@icloud.com>jlg79@icloud.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:285px; top:660px; width:75px; height:120px;' >
+<a href="#myModal75" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Gregory</div>
+-->
+75 <!-- <br><div style="font-size:x-small">51220 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal76" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606070B<br><hr>Bob & Debby Cumback<br>51210 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bcumback@tabletoptelephone.com>bcumback@tabletoptelephone.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:360px; top:660px; width:60px; height:120px;' >
+<a href="#myModal76" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Cumback</div>
+-->
+76 <!-- <br><div style="font-size:x-small">51210 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal77" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606068L<br><hr>Brian Paden<br>51147 W. Donald Dr.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bdpaden@yahoo.com>bdpaden@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:420px; top:555px; width:60px; height:105px;' >
+<a href="#myModal77" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Paden</div>
+-->
+77 <!-- <br><div style="font-size:x-small">51147 W. Donald Dr.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal78" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606068K<br><hr>Joan & Tim Meyer & Denver<br>51140 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:JoanDenverMeyer@gmail.com>JoanDenverMeyer@gmail.com</a><br>Secondary email: <a href=mailto:timdenver949@gmail.com>timdenver949@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:420px; top:660px; width:60px; height:120px;' >
+<a href="#myModal78" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Meyer & Denver</div>
+-->
+78 <!-- <br><div style="font-size:x-small">51140 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal79" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606068H<br><hr>Jake & Bonnie Schmid & Jenson<br>51229 W. Donald Dr.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:schmidjake@gmail.com>schmidjake@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:480px; top:540px; width:45px; height:120px;' >
+<a href="#myModal79" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Schmid & Jenson</div>
+-->
+79 <!-- <br><div style="font-size:x-small">51229 W. Donald Dr.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal80" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606068M<br><hr>Neil Oltman<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:nro5690@gmail.com>nro5690@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:480px; top:660px; width:45px; height:120px;' >
+<a href="#myModal80" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Oltman</div>
+-->
+80 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal81" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606074L<br><hr>Gregory & Gail Wright<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:raticoolkustoms@icloud.com>raticoolkustoms@icloud.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:30px; top:810px; width:60px; height:120px;' >
+<a href="#myModal81" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Wright</div>
+-->
+81 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal82" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606074N<br><hr>Julie Moore<br>51415 W. William Rd.<br>Aguila AZ 85320-0734<br><hr>
+Primary email: <a href=mailto:jmoore11199@earthlink.net>jmoore11199@earthlink.net</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:90px; top:810px; width:60px; height:120px;' >
+<a href="#myModal82" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Moore</div>
+-->
+82 <!-- <br><div style="font-size:x-small">51415 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal83" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606074G<br><hr>Jay Daly<br>51347 W. William Rd<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:d48806@tabletoptelephone.com>d48806@tabletoptelephone.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:810px; width:75px; height:120px;' >
+<a href="#myModal83" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Daly</div>
+-->
+83 <!-- <br><div style="font-size:x-small">51347 W. William Rd</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal84" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606074D<br><hr>Ray & Muriel Ishizaka<br>51279 W William Road<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:muriel.ishizaka@gmail.com>muriel.ishizaka@gmail.com</a><br>Secondary email: <a href=mailto:ray.ishizaka@gmail.com>ray.ishizaka@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:225px; top:810px; width:60px; height:120px;' >
+<a href="#myModal84" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Ishizaka</div>
+-->
+84 V <!-- <br><div style="font-size:x-small">51279 W William Road</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal85" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606074B<br><hr>Beaux & Annabelle Martin<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:lsubeaux@gmail.com>lsubeaux@gmail.com</a><br>Secondary email: <a href=mailto:pilotannabelle@gmail.com>pilotannabelle@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:30px; top:930px; width:60px; height:120px;' >
+<a href="#myModal85" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Martin</div>
+-->
+85 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal86" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606074E<br><hr>Alan and Renee Hall<br>51414 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:renee@peakpropanellc.com>renee@peakpropanellc.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#FFFFFF;left:90px; top:930px; width:60px; height:120px;' >
+<a href="#myModal86" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Hall</div>
+-->
+86 <!-- <br><div style="font-size:x-small">51414 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal87" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606073A<br><hr>Robert Markham<br>51124 W. Pete Road<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:mxrob316@aol.com>mxrob316@aol.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:150px; top:930px; width:75px; height:120px;' >
+<a href="#myModal87" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Markham</div>
+-->
+87 <!-- <br><div style="font-size:x-small">51124 W. Pete Road</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal88" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606073B<br><hr>Scott & Kim Porter<br>51314 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:skotport@hotmail.com>skotport@hotmail.com</a><br>Secondary email: <a href=mailto:almondmom@hotmail.com>almondmom@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:225px; top:930px; width:60px; height:120px;' >
+<a href="#myModal88" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Porter</div>
+-->
+88 <!-- <br><div style="font-size:x-small">51314 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal89" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606071B<br><hr>Roger Downs<br>51229 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:chercab27@gmail.com>chercab27@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:285px; top:810px; width:75px; height:120px;' >
+<a href="#myModal89" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Downs</div>
+-->
+89 <!-- <br><div style="font-size:x-small">51229 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal90" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606071H<br><hr>George & Maureen Bartly<br>51211 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:gobart007@hotmail.com>gobart007@hotmail.com</a><br>Secondary email: <a href=mailto:mobartley0@gmail.com>mobartley0@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:360px; top:810px; width:60px; height:120px;' >
+<a href="#myModal90" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Bartly</div>
+-->
+90 <!-- <br><div style="font-size:x-small">51211 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal91" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606071G<br><hr>Tim Denver<br>PO Box 205<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#abc;left:420px; top:810px; width:60px; height:120px;' >
+<a href="#myModal91" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Denver</div>
+-->
+91 V <!-- <br><div style="font-size:x-small">PO Box 205</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal92" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606071J<br><hr>Robert & Linda Felland<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:felland@nnex.net>felland@nnex.net</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:480px; top:810px; width:45px; height:120px;' >
+<a href="#myModal92" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Felland</div>
+-->
+92 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal93" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606072C<br><hr>Buck & Pat Bolding<br>51240 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:buck@tabletoptelephone.com>buck@tabletoptelephone.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:285px; top:930px; width:75px; height:120px;' >
+<a href="#myModal93" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Bolding</div>
+-->
+93 <!-- <br><div style="font-size:x-small">51240 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal94" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606072D<br><hr>Karen Myers<br>51208 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:kj2myers@gmail.com>kj2myers@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:360px; top:930px; width:60px; height:120px;' >
+<a href="#myModal94" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Myers</div>
+-->
+94 <!-- <br><div style="font-size:x-small">51208 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal95" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606072E<br><hr>Carsten & Kirsten Soendergaard<br>51150 W. Pete Rd<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:cas0603@yahoo.com>cas0603@yahoo.com</a><br>Secondary email: <a href=mailto:kirstensondergaard@yahoo.com>kirstensondergaard@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:420px; top:930px; width:60px; height:120px;' >
+<a href="#myModal95" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Soendergaard</div>
+-->
+95 <!-- <br><div style="font-size:x-small">51150 W. Pete Rd</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal96" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606072F<br><hr>Mark Rebholz<br>51118 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:markarebholz@gmail.com>markarebholz@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:480px; top:930px; width:45px; height:120px;' >
+<a href="#myModal96" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Rebholz</div>
+-->
+96 <!-- <br><div style="font-size:x-small">51118 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal97" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043W<br><hr>Renate Ganswindt<br>48130 N. 510th Ave.<br>Aguila AZ 85320-0686<br><hr>
+Secondary email: <a href=mailto:renate@tabletoptelephone.com>renate@tabletoptelephone.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:540px; width:105px; height:60px;' >
+<a href="#myModal97" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Ganswindt</div>
+-->
+97 <!-- <br><div style="font-size:x-small">48130 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal98" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043X<br><hr>Bonnie Dier<br>48113 N. 510th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bonnie48113@icloud.com>bonnie48113@icloud.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:690px; top:540px; width:120px; height:60px;' >
+<a href="#myModal98" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Dier</div>
+-->
+98 <!-- <br><div style="font-size:x-small">48113 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal99" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043U<br><hr>Jim Truitt<br>48014 N. 510th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:jim@aircad.net>jim@aircad.net</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:600px; width:90px; height:60px;' >
+<a href="#myModal99" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Truitt</div>
+-->
+99 <!-- <br><div style="font-size:x-small">48014 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal100" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043V<br><hr>Joan Olivera<br>48015 N. 510th Ave.<br>Aguila AZ 85320<br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:705px; top:600px; width:105px; height:60px;' >
+<a href="#myModal100" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Olivera</div>
+-->
+100 <!-- <br><div style="font-size:x-small">48015 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal101" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043T<br><hr>Brett & Jana Frazier<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bfrazierx@live.com>bfrazierx@live.com</a><br>Secondary email: <a href=mailto:vanamburgmd@gmail.com>vanamburgmd@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:660px; width:90px; height:60px;' >
+<a href="#myModal101" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Frazier</div>
+-->
+101 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal102" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043Q<br><hr>Gary & Sandy Elliot<br>51020 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:garyleeelliot@gmail.com>garyleeelliot@gmail.com</a><br>Secondary email: <a href=mailto:sandralelliot@hotmail.com>sandralelliot@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:720px; width:90px; height:60px;' >
+<a href="#myModal102" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Elliot</div>
+-->
+102 <!-- <br><div style="font-size:x-small">51020 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal103" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043R<br><hr>Tim Denver<br>47825 N. 510th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:timdenver949@gmail.com>timdenver949@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#abc;left:705px; top:660px; width:45px; height:120px;' >
+<a href="#myModal103" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Denver</div>
+-->
+103 <!-- <br><div style="font-size:x-small">47825 N. 510th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal104" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043S<br><hr>Kay Krause<br>50916 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:kkrause@tabletoptelephone.com>kkrause@tabletoptelephone.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:750px; top:660px; width:60px; height:120px;' >
+<a href="#myModal104" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Krause</div>
+-->
+104 <!-- <br><div style="font-size:x-small">50916 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal105" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043B<br><hr>Shirl & Dorothy Dickey<br>48112 N. 508th Ave.<br>Aguila AZ 85320-0828<br><hr>
+Primary email: <a href=mailto:Kshirlan@gmail.com>Kshirlan@gmail.com</a><br>Secondary email: <a href=mailto:dorothymdickey@gmail.com>dorothymdickey@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:810px; top:540px; width:105px; height:60px;' >
+<a href="#myModal105" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Dickey</div>
+-->
+105 <!-- <br><div style="font-size:x-small">48112 N. 508th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal106" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043H<br><hr>Barry Kreikemeier<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:barry.kreikemeier@yahoo.com>barry.kreikemeier@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:945px; top:540px; width:105px; height:60px;' >
+<a href="#myModal106" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Kreikemeier</div>
+-->
+106 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal107" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043C<br><hr>Joe & Sherri Eiting<br>48008 N. 508th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:joe.eiting@gmail.com>joe.eiting@gmail.com</a><br>Secondary email: <a href=mailto:saeiting@gmail.com>saeiting@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:810px; top:600px; width:105px; height:60px;' >
+<a href="#myModal107" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Eiting</div>
+-->
+107 <!-- <br><div style="font-size:x-small">48008 N. 508th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal108" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 506060131<br><hr>Melissa Hunter<br>48013 N. 508th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:mjoyhmail@gmail.com>mjoyhmail@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:945px; top:600px; width:105px; height:60px;' >
+<a href="#myModal108" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Hunter</div>
+-->
+108 <!-- <br><div style="font-size:x-small">48013 N. 508th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal109" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043Y<br><hr>Bob & Sabrina Symns<br>50836 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:bob.symns@gmail.com>bob.symns@gmail.com</a><br>Secondary email: <a href=mailto:sabrina.symns@gmail.com>sabrina.symns@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:810px; top:660px; width:60px; height:120px;' >
+<a href="#myModal109" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Symns</div>
+-->
+109 <!-- <br><div style="font-size:x-small">50836 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal110" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043Z<br><hr>Ed & Kathy Bartholemy<br>47880 N. 508th Ave.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:edb@kintonland.com>edb@kintonland.com</a><br>Secondary email: <a href=mailto:kathyb@kintonland.com>kathyb@kintonland.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:870px; top:660px; width:45px; height:120px;' >
+<a href="#myModal110" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Bartholemy</div>
+-->
+110 V <!-- <br><div style="font-size:x-small">47880 N. 508th Ave.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal111" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043E<br><hr>Jim & Pat Kapeller, & Mindrup<br>50750 W. William Rd.<br> <br><hr>
+Primary email: <a href=mailto:kapellair@gmail.com>kapellair@gmail.com</a><br>Secondary email: <a href=mailto:pmindrup@gmail.com >pmindrup@gmail.com </a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:945px; top:660px; width:45px; height:120px;' >
+<a href="#myModal111" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Kapeller, & Mindrup</div>
+-->
+111 <!-- <br><div style="font-size:x-small">50750 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal112" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606043D<br><hr>William Miller<br>Vacant<br> <br><hr>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:990px; top:660px; width:60px; height:120px;' >
+<a href="#myModal112" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Miller</div>
+-->
+112 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal113" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606086B<br><hr>Gene & Lynda Wilson<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:fastbuggy123@gmail.com>fastbuggy123@gmail.com</a><br>Secondary email: <a href=mailto:flysilly@gmail.com>flysilly@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#ccccff;left:585px; top:810px; width:45px; height:120px;' >
+<a href="#myModal113" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Wilson</div>
+-->
+113 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal114" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606086A<br><hr>Steve Sorenson<br>50911 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:deaverhigh61@gmail.com>deaverhigh61@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:630px; top:810px; width:60px; height:120px;' >
+<a href="#myModal114" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Sorenson</div>
+-->
+114 <!-- <br><div style="font-size:x-small">50911 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal115" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606087<br><hr>Gary & Rebecca Saunders<br>50921 William Rd.<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:reb3036@gmail.com>reb3036@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:690px; top:810px; width:60px; height:120px;' >
+<a href="#myModal115" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Saunders</div>
+-->
+115 <!-- <br><div style="font-size:x-small">50921 William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal116" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606088<br><hr>Jim & Elaine Fowler<br>50909 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:jimnelaine@yahoo.com>jimnelaine@yahoo.com</a><br>Secondary email: <a href=mailto:elainemfowler@yahoo.com>elainemfowler@yahoo.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:750px; top:810px; width:60px; height:120px;' >
+<a href="#myModal116" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Fowler</div>
+-->
+116 <!-- <br><div style="font-size:x-small">50909 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal117" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606085F<br><hr>Carole Jo Cooke<br>51038 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Secondary email: <a href=mailto:carole@carolecooke.com>carole@carolecooke.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:585px; top:930px; width:45px; height:120px;' >
+<a href="#myModal117" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Cooke</div>
+-->
+117 <!-- <br><div style="font-size:x-small">51038 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal118" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606085D<br><hr>Tom Satterfield<br>51008 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:tjsatter@panix.com>tjsatter@panix.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:;left:630px; top:930px; width:60px; height:120px;' >
+<a href="#myModal118" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Satterfield</div>
+-->
+118 <!-- <br><div style="font-size:x-small">51008 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal119" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606083<br><hr>Rick, Jay & Pamela Strankman<br>50934 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:rick.strankman@gmail.com>rick.strankman@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:690px; top:930px; width:60px; height:120px;' >
+<a href="#myModal119" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Strankman</div>
+-->
+119 <!-- <br><div style="font-size:x-small">50934 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal120" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 506060849<br><hr>Gary & Jeanette Eisert<br>50908 W. Pete Road<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:gaeisert@hallandales.com>gaeisert@hallandales.com</a><br>Secondary email: <a href=mailto:jee@hallandales.com>jee@hallandales.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:750px; top:930px; width:60px; height:120px;' >
+<a href="#myModal120" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Eisert</div>
+-->
+120 <!-- <br><div style="font-size:x-small">50908 W. Pete Road</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal121" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606106<br><hr>Phil & LInda Gigliotti & Cooke<br>50739 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:Gilotti@earthlink.net>Gilotti@earthlink.net</a><br>Secondary email: <a href=mailto:nanacookieonthego@gmail.com>nanacookieonthego@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:810px; top:810px; width:60px; height:120px;' >
+<a href="#myModal121" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Gigliotti & Cooke</div>
+-->
+121 <!-- <br><div style="font-size:x-small">50739 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal122" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606107<br><hr>Dale & Tamra Zogleman<br>50807 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:dazict@hotmail.com>dazict@hotmail.com</a><br>Secondary email: <a href=mailto:tzwkndrs@hotmail.com>tzwkndrs@hotmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:870px; top:810px; width:60px; height:120px;' >
+<a href="#myModal122" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Zogleman</div>
+-->
+122 <!-- <br><div style="font-size:x-small">50807 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal123" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606092C<br><hr>Mary Kelly<br>Vacant<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:marykscottsdale@aol.com>marykscottsdale@aol.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#CCAA00;left:930px; top:810px; width:60px; height:120px;' >
+<a href="#myModal123" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Kelly</div>
+-->
+123 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal124" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606091<br><hr>Mary Kelly<br>50615 W. William Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:marykscottsdale@aol.com>marykscottsdale@aol.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#CCAA00;left:990px; top:810px; width:60px; height:120px;' >
+<a href="#myModal124" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Kelly</div>
+-->
+124 <!-- <br><div style="font-size:x-small">50615 W. William Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal125" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606082A<br><hr>Jim & Janet Riffle<br>50840 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:jrmimlet@gmail.com>jrmimlet@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:810px; top:930px; width:60px; height:120px;' >
+<a href="#myModal125" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Riffle</div>
+-->
+125 <!-- <br><div style="font-size:x-small">50840 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal126" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606082B<br><hr>Donna Davidson<br>50710 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:donna.davidson.co@gmail.com>donna.davidson.co@gmail.com</a><br>Secondary email: <a href=mailto:donna.davidson.co@gmail.com>donna.davidson.co@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:870px; top:930px; width:60px; height:120px;' >
+<a href="#myModal126" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Davidson</div>
+-->
+126 <!-- <br><div style="font-size:x-small">50710 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal127" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606102<br><hr>Maurice Colontonio<br>Vacant<br> <br><hr>
+Primary email: <a href=mailto:Moespeeds@gmail.com>Moespeeds@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:930px; top:930px; width:60px; height:120px;' >
+<a href="#myModal127" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Colontonio</div>
+-->
+127 V <!-- <br><div style="font-size:x-small">Vacant</div>
+-->
+</div>
+
+</a>
+
+</div>
+<div id="myModal128" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header bg-info text-white" align="center" >
+<h4 class="modal-title">Lot Details</h4>&nbsp;
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" align="left">
+Parcel Number: 50606103<br><hr>Vernon Franklin<br>50614 W. Pete Rd.<br>Aguila AZ 85320<br><hr>
+Primary email: <a href=mailto:vfrank59@gmail.com>vfrank59@gmail.com</a><br>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class='parking-space' style=' background-color:#fff;left:990px; top:930px; width:60px; height:120px;' >
+<a href="#myModal128" role="button" data-toggle="modal" title="Click for details." >
+<div style="color:black;font-size: medium">
+<!--
+<div style="font-size:x-small"> Franklin</div>
+-->
+128 <!-- <br><div style="font-size:x-small">50614 W. Pete Rd.</div>
+-->
+</div>
+
+</a>
+
+</div>
+
+</div>
+<br><br><br><br><br><br>
+</body>
+</html>
+
